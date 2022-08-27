@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Calculadora de impuestos{% endblock %}
 
-
 {% block content %}
 
+<h1>Calculadora de impuestos</h1>
 
-<h1>Ingrese parámetros en soles (S/.)</h1>
+<i>Ingrese parámetros en soles (S/.)</i><br><br>
 
 <form action="/calculadora_impuestos/resultado" method="POST">
     <label for="sueldo"><b>Sueldo:</b></label><br>
@@ -17,6 +17,24 @@
     <label for="Grat_Diciembre"><b>Gratificación de diciembre:</b></label><br>
     <input type="number" id="Grat_Diciembre" name="Grat_Diciembre" required><br><br>
 
+
+    <label for="mesinicio"><b>Seleccione el mes en que empezó a trabajar:</b></label><br>
+
+    <select name="mesinicio" id="mesinicio" required>
+        <option value="">--Seleccione una opción--</option>
+        <option value="1">Enero</option>
+        <option value="2">Febrero</option>
+        <option value="3">Marzo</option>
+        <option value="4">Abril</option>
+        <option value="5">Mayo</option>
+        <option value="6">Junio</option>
+        <option value="7">Julio</option>
+        <option value="8">Agosto</option>
+        <option value="9">Setiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">DIciembre</option>
+    </select><br><br>
 
     <label><b>Gratificaciones adicionales:</b></label><br>
 
