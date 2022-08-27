@@ -10,7 +10,7 @@ if __name__ == '__main__':
     print('app running')
     #try:
     #app.run(debug=True, use_reloader=False) #, port = port)
-    app.run(debug=False, port=environ.get("PORT", 5000))#, processes=2)
+    app.run(host="0.0.0.0",port=environ.get("PORT", 5000))
     #finally:
     print('I shat myself')
         #pass
